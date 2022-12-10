@@ -19,8 +19,8 @@ class QbankController extends Controller
     public function store_qbank(Request $request)
     {
         $qbank=new Qbank;
-        $qbank->semester=$request->semster;
-        $qbank->year=$request->year;
+        $qbank->semester_id=$request->semester_id;
+        $qbank->question_id=$request->question_id;
 
         $qbank->save();
         return redirect()->back();

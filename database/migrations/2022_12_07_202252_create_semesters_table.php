@@ -15,10 +15,9 @@ return new class extends Migration
     {
         Schema::create('semesters', function (Blueprint $table) {
             $table->id();
-            $table->string('semester_id');
             $table->string('semester_name');
             $table->string('year');
-            $table->string('semester_type');
+            $table->string('semester_type')->nullable();
 
 
             $table->timestamps();

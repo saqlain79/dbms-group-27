@@ -5,29 +5,29 @@
 <div class="main-panel">
     <div class="content-wrapper">
        <div class="container pt-5">
-           <h2>Question Bank Catagory</h2>
+           <h2>Semester list</h2>
   
         
            <table class="table">
             <thead>
               <tr>
                 <th>Serial</th>
-                <th>Semester</th>
+                <th>Name</th>
                 <th>Year</th>
                 <th>Action</th>
 
               </tr>
             </thead>
             <tbody>
-                @foreach($qbanks as $qbank)
+                @foreach($semesters as $semester)
               <tr>
                 <td>{{$loop->index+1}}</td>
-                <td>{{$qbank->semester}}</td>
-                <td>{{$qbank->year}}</td>
+                <td>{{$semester->semester_name}}</td>
+                <td>{{$semester->year}}</td>
 
                 <td>
-                    <a href= ""class="btn btn-primary">Edit</a>
-                    <a href= ""class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</a>
+                    <a href= "/edit_semester/{{$semester->id}}"class="btn btn-primary">Edit</a>
+                    <a href= "/delete_semester/{{$semester->id}}"class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</a>
     
                 </td>
              </tr>

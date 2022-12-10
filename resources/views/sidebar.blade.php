@@ -79,18 +79,35 @@
       </li>
       
       <li class="nav-item menu-items">
-        <a class="nav-link" data-toggle="collapse" href="#ui-basic1" aria-expanded="false" aria-controls="ui-basic">
+        <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic">
           <span class="menu-icon">
             <i class="mdi mdi-laptop"></i>
           </span>
           <span class="menu-title">Question bank</span>
           <i class="menu-arrow"></i>
         </a>
-        <div class="collapse" id="ui-basic1">
+        <div class="collapse" id="ui-basic2">
           <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link" href="/show_qbank">Show Question Bank</a></li>
             <li class="nav-item"> <a class="nav-link" href="/create_qbank">Create Question Bank</a></li>
             <li class="nav-item"> <a class="nav-link" href="/add_question">Add Question</a></li>
+
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item menu-items">
+        <a class="nav-link" data-toggle="collapse" href="#ui-basic1" aria-expanded="false" aria-controls="ui-basic">
+          <span class="menu-icon">
+            <i class="mdi mdi-laptop"></i>
+          </span>
+          <span class="menu-title" id="semester">Semesters</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="ui-basic1">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="/show_semester">Show List</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/add_semester">Add to list</a></li>
 
           </ul>
         </div>
